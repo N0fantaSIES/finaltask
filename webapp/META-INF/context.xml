@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="jdbc/mydatabase"
+    auth="Container"
+    type="javax.sql.DataSource"
+    username="root"
+    password="12345"
+    driverClassName="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://localhost/final_task_project_db"
+    validationQuery="select 1"
+    maxActive="10"
+    maxIdle="4"/>
+
+</Context>

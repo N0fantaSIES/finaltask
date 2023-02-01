@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="finaltask:Web exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="189e162d-d166-42c7-ac01-65233b4b4182" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/finaltask_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/CommandContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/LocalServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/MainServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/RoleTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/TransferServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/filter/FilterAdminConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/filter/FilterSpeakerConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/filter/FilterUserConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/login/LogOutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/login/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/login/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/moderator/CreateMeetingModeratorServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/moderator/CreateReportPageModeratorServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingShowPageModeratorsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingSortingForModeratorsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/moderator/ModeratorsCountParticipantsAndReportsPageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/moderator/ReportShowPageModeratorsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/speakers/AvailableReportsShowPageSpeakerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/speakers/ReassignReportSpeakerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/speakers/ReportShowPageSpeakerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/user/AvailableMeetingShowPageUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/user/MeetingParticipationUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/user/UserParticipationMeetingPageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/ConnectionToDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/Entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/Entity/MainUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/Entity/Meeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/Entity/Report.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/EntityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/MeetingDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/MeetingUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/ReportsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lang.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lang_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lang_uk.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/command/moderator/CreateMeetingModeratorServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/db/Entity/ReportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/db/MeetingDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/db/MeetingUserDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/db/ReportsDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/db/UserDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/META-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/custom.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/available_meeting_show_page_for_user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/available_report_show_page_for_speaker.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/error_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/login_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/main_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/meeting_creation_page_for_moderators.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/meeting_show_page_for_moderator.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/register_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/report_create_page_for_moderators.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/report_show_page_for_moderators.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/show_number_of_participants_per_meeting_moderators.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/speaker_reports_show_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/style/st4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/user_participation_meeting_show_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/working_page_for_moderators.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/working_page_for_speakers.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/working_page_for_users.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JspContextManager">
+    <jsp-to-context jsp-file="file://$PROJECT_DIR$/webapp/header.jsp" context-file="file://$PROJECT_DIR$/webapp/report_show_page_for_moderators.jsp" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Js32pp1Wvt3h4jEyc7uLOon4Cc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ilush/IdeaProjects/FInalTaskProject&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ilush\IdeaProjects\finaltask\webapp\style" />
+      <recent name="C:\Users\ilush\IdeaProjects\finaltask\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ilush\IdeaProjects\finaltask\webapp" />
+      <recent name="C:\Users\ilush\IdeaProjects\finaltask\META-INF" />
+      <recent name="C:\Users\ilush\IdeaProjects\finaltask\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="servlets.moderator" />
+      <recent name="db" />
+      <recent name="servlets.login" />
+      <recent name="db.Entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CreateMeetingModeratorServletTest.doGet">
+    <configuration name="All in finaltask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finaltask" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateMeetingModeratorServletTest.doGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finaltask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="command.moderator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="servlets.moderator" />
+      <option name="MAIN_CLASS_NAME" value="command.moderator.CreateMeetingModeratorServletTest" />
+      <option name="METHOD_NAME" value="doGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDAOTest.createNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finaltask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="db" />
+      <option name="MAIN_CLASS_NAME" value="db.UserDAOTest" />
+      <option name="METHOD_NAME" value="createNewUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDAOTest.findUserByLoginAndPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finaltask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="db" />
+      <option name="MAIN_CLASS_NAME" value="db.UserDAOTest" />
+      <option name="METHOD_NAME" value="findUserByLoginAndPassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDAOTest.findUserByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finaltask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="db" />
+      <option name="MAIN_CLASS_NAME" value="db.UserDAOTest" />
+      <option name="METHOD_NAME" value="findUserByUserId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.70" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.70" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8085/finaltask_Web_exploded/main" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="finaltask:Web exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/finaltask_Web_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="7a9f42b6-f947-42c4-adc9-59be969a5a20" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51526" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="finaltask:Web exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.CreateMeetingModeratorServletTest.doGet" />
+      <item itemvalue="JUnit.UserDAOTest.findUserByLoginAndPassword" />
+      <item itemvalue="JUnit.UserDAOTest.findUserByUserId" />
+      <item itemvalue="JUnit.UserDAOTest.createNewUser" />
+      <item itemvalue="JUnit.All in finaltask" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.70" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CreateMeetingModeratorServletTest.doGet" />
+        <item itemvalue="JUnit.All in finaltask" />
+        <item itemvalue="JUnit.UserDAOTest.findUserByUserId" />
+        <item itemvalue="JUnit.UserDAOTest.findUserByLoginAndPassword" />
+        <item itemvalue="JUnit.UserDAOTest.createNewUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="189e162d-d166-42c7-ac01-65233b4b4182" name="Changes" comment="" />
+      <created>1672852765239</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672852765239</updated>
+      <workItem from="1672852767063" duration="3670000" />
+      <workItem from="1672941961090" duration="3846000" />
+      <workItem from="1673018700884" duration="2894000" />
+      <workItem from="1673190212220" duration="1813000" />
+      <workItem from="1673281377474" duration="2942000" />
+      <workItem from="1673288997409" duration="9000" />
+      <workItem from="1673289020680" duration="1215000" />
+      <workItem from="1673290319886" duration="1574000" />
+      <workItem from="1673368521349" duration="5071000" />
+      <workItem from="1673449987398" duration="610000" />
+      <workItem from="1673529562749" duration="14618000" />
+      <workItem from="1673777414739" duration="4116000" />
+      <workItem from="1673867793331" duration="7507000" />
+      <workItem from="1673968128176" duration="5547000" />
+      <workItem from="1674041621476" duration="600000" />
+      <workItem from="1674054703072" duration="11854000" />
+      <workItem from="1674133686523" duration="15430000" />
+      <workItem from="1674216172531" duration="13771000" />
+      <workItem from="1674306707380" duration="8960000" />
+      <workItem from="1674327259888" duration="5435000" />
+      <workItem from="1674398066460" duration="10352000" />
+      <workItem from="1674482719463" duration="27134000" />
+      <workItem from="1674567165003" duration="17985000" />
+      <workItem from="1674652290214" duration="25832000" />
+      <workItem from="1674742859105" duration="31991000" />
+      <workItem from="1674820305470" duration="12208000" />
+      <workItem from="1674920732064" duration="603000" />
+      <workItem from="1674994637700" duration="18874000" />
+      <workItem from="1675089425231" duration="26889000" />
+      <workItem from="1675168122364" duration="1743000" />
+      <workItem from="1675171768972" duration="5032000" />
+      <workItem from="1675177845610" duration="5573000" />
+      <workItem from="1675263279302" duration="8047000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/login/RegisterServlet.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/TransferServlet.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/TransferServlet.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/speakers/ReportShowPageSpeakerServlet.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/speakers/ReportShowPageSpeakerServlet.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/moderator/CreateReportPageModeratorServlet.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/speakers/ReassignReportSpeakerServlet.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/user/MeetingParticipationUserServlet.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/filter/FilterAdminConnect.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/filter/FilterUserConnect.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/filter/FilterSpeakerConnect.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/user/AvailableMeetingShowPageUserServlet.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/command/LocalServlet.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/MeetingDAO.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/MeetingDAO.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/MeetingDAO.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/MeetingDAO.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/MeetingDAO.java</url>
+          <line>156</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/MeetingDAO.java</url>
+          <line>183</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/ReportsDAO.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/ReportsDAO.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/ReportsDAO.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/ReportsDAO.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/ReportsDAO.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/ReportsDAO.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/db/ReportsDAO.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/finaltask$MeetingDAOTest_createNewMeeting.ic" NAME="MeetingDAOTest.createNewMeeting Coverage Results" MODIFIED="1674766872544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>db.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/finaltask$All_in_finaltask.ic" NAME="All in finaltask Coverage Results" MODIFIED="1675118390596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
