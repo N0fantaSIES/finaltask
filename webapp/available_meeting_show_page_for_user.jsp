@@ -20,7 +20,7 @@
             <td>${list.topic}</td>
             <td>${list.date}</td>
             <td>${list.creator_name}</td>
-            <td><a href="<c:url value = "/userMeetingParticipation?id=${list.id}"/>">
+            <td><a href="<c:url value = "/controller?command=userMeetingParticipation&id=${list.id}"/>">
                 <input type="submit" value="<fmt:message key="available_meeting_show_page_for_user.jsp_button_participate" bundle="${rb}"/>"/>
             </a>
             </td>
@@ -34,7 +34,7 @@
     int splitNumber = (int) request.getAttribute("split");
     for (int i = 0; i < splitNumber; i++) { %>
         <c:set var="k" value="${k+1}" />
-        <a href="<c:url value = "/userTableServlet?pagNumber=${k}"/>"><%=i+1%></a>
+        <a href="<c:url value = "/controller?command=userTableCommand&pagNumber=${k}"/>"><%=i+1%></a>
 <%}%>
 </body>
 </html>

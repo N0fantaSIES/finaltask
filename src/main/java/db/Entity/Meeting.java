@@ -1,21 +1,30 @@
 package db.Entity;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class Meeting extends Entity{
     private String name;
     private String topic;
-//    private ArrayList<Integer> number_of_reports = new ArrayList<>();
-//    private ArrayList<Integer> number_of_participants = new ArrayList<>();
     private Date date;
     private long creator_id;
     private String creator_name;
 
     private int number_of_participants;
 
+    private int number_of_participants_who_came;
+
     private int number_of_reports;
+
+    public int getNumber_of_participants_who_came() {
+        return number_of_participants_who_came;
+    }
+
+    public void setNumber_of_participants_who_came(int number_of_participants_who_came) {
+        this.number_of_participants_who_came = number_of_participants_who_came;
+    }
 
     public int getNumber_of_reports() {
         return number_of_reports;

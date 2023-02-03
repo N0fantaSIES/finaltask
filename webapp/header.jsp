@@ -7,7 +7,7 @@
 
 <div id="header">
 
-    <form id="localForm" action="languageSwitcherServlet">
+    <form id="localForm" action="controller?command=languageSwitcherCommand" method="post">
         <div id="leftLocal">
             <c:choose>
                 <c:when test="${newLocale == 'en'}">
@@ -42,31 +42,31 @@
                 <form action="meeting_creation_page_for_moderators.jsp">
                     <input type="submit" value="<fmt:message key="header.jsp_button_moder_create_new_meeting" bundle="${rb}"/>" />
                 </form>
-                <form action="moderatorTableServlet">
+                <form id="show_all_meetings_moder_form" action="controller?command=moderatorTableCommand" method="post">
                     <input type="submit" value="<fmt:message key="header.jsp_button_moder_show_all_meetings" bundle="${rb}"/>" />
                 </form>
-                <form action="moderReportTableServlet">
+                <form id="show_all_reports_moder_form" action="controller?command=moderReportTableCommand" method="post">
                     <input type="submit" value="<fmt:message key="header.jsp_button_moder_show_all_reports" bundle="${rb}"/>" />
                 </form>
-                <form action="countParticipantsTable">
+                <form id="show_all_participants_moder_form" action="controller?command=moderatorCountParticipantsTable" method="post">
                     <input type="submit" value="<fmt:message key="header.jsp_button_moder_show_all_participants_of_meeting" bundle="${rb}"/>" />
                 </form>
             </c:when>
 <%--            guest--%>
             <c:when test="${mainUser.role_id == 2 }">
-                <form action="userTableServlet">
+                <form id="show_all_meetings_user_form" action="controller?command=userTableCommand" method="post">
                     <input type="submit" value="<fmt:message key="header.jsp_button_guest_show_all_meetings" bundle="${rb}"/>" />
                 </form>
-                <form action="participationMeetingUserPage">
+                <form id="show_user_meetings_form" action="controller?command=participationMeetingUserPage" method="post">
                     <input type="submit" value="<fmt:message key="header.jsp_button_guest_show_my_meetings" bundle="${rb}"/>" />
                 </form>
             </c:when>
 <%--            speaker--%>
             <c:when test="${mainUser.role_id == 3 }">
-                <form action="speakerReportTableServlet">
+                <form id="show_speaker_reports_form" action="controller?command=speakerReportTableCommand" method="post">
                     <input type="submit" value="<fmt:message key="header.jsp_button_speaker_show_my_reports" bundle="${rb}"/>" />
                 </form>
-                <form action="speakerTableServlet">
+                <form id="show_all_available_reports_speaker_form" action="controller?command=speakerTableCommand" method="post">
                     <input type="submit" value="<fmt:message key="header.jsp_button_speaker_show_all_available_reports" bundle="${rb}"/>" />
                 </form>
             </c:when>
@@ -76,7 +76,7 @@
     </div>
 
     <div id="rightHeader">
-        <form action="deloginingServlet">
+        <form id="logout_form" action="controller?command=logOutCommand" method="post">
             <input type="submit" value="<fmt:message key="header.jsp_button_moder_leave" bundle="${rb}"/>" />
         </form>
     </div>

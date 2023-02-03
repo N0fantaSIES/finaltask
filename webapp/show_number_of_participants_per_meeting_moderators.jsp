@@ -12,11 +12,15 @@
     <th><fmt:message key="show_number_of_participants_per_meeting_moderators.jsp_table_header_moderator_name" bundle="${rb}"/></th>
     <th><fmt:message key="show_number_of_participants_per_meeting_moderators.jsp_table_header_moderator_topic" bundle="${rb}"/></th>
     <th><fmt:message key="show_number_of_participants_per_meeting_moderators.jsp_table_header_moderator_creator_name" bundle="${rb}"/></th>
-    <th><a href="<c:url value = "/meetingSortingForModeratorsServlet?sortingIndex=date"/>">
+    <th><fmt:message key="show_number_of_participants_per_meeting_moderators.jsp_table_header_moderator_number_of_participants_will_physically_attend" bundle="${rb}"/></th>
+
+    <th><a href="<c:url value = "/controller?command=meetingSortingForModeratorsCommand&sortingIndex=date"/>">
       <fmt:message key="show_number_of_participants_per_meeting_moderators.jsp_table_header_moderator_date" bundle="${rb}"/></a></th>
-    <th><a href="<c:url value = "/meetingSortingForModeratorsServlet?sortingIndex=numberOfParticipants"/>">
+
+    <th><a href="<c:url value = "/controller?command=meetingSortingForModeratorsCommand&sortingIndex=numberOfParticipants"/>">
       <fmt:message key="show_number_of_participants_per_meeting_moderators.jsp_table_header_moderator_number_of_participants" bundle="${rb}"/></a></th>
-    <th><a href="<c:url value = "/meetingSortingForModeratorsServlet?sortingIndex=numberOfReports"/>">
+
+    <th><a href="<c:url value = "/controller?command=meetingSortingForModeratorsCommand&sortingIndex=numberOfReports"/>">
       <fmt:message key="show_number_of_participants_per_meeting_moderators.jsp_table_header_moderator_number_of_reports" bundle="${rb}"/></a></th>
   </tr>
   <c:forEach var="list" items="${meetingList}">
@@ -24,6 +28,7 @@
       <td>${list.name}</td>
       <td>${list.topic}</td>
       <td>${list.creator_name}</td>
+      <td>${list.number_of_participants_who_came}</td>
       <td>${list.date}</td>
       <td>${list.number_of_participants}</td>
       <td>${list.number_of_reports}</td>

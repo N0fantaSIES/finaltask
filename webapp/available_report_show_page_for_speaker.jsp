@@ -22,7 +22,7 @@
             <td>${list.meeting_creator_name}</td>
             <td>${list.meeting_date}</td>
             <td>${list.title_of_report}</td>
-            <td> <a href = "<c:url value = "/reassignSpeakerServlet?id=${list.id}"/>">
+            <td> <a href = "<c:url value = "/controller?command=reassignSpeakerCommand&id=${list.id}"/>">
                 <input type="submit" value="<fmt:message key="available_report_show_page_for_speaker.jsp_button_take_report" bundle="${rb}"/>" /></a> <td>
         </tr>
     </c:forEach>

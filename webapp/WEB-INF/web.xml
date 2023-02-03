@@ -3,184 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <display-name>Main</display-name>
-    <servlet>
-        <servlet-name>mainPageCommand</servlet-name>
-        <servlet-class>command.MainCommand</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>mainPageCommand</servlet-name>
-        <url-pattern>/main</url-pattern>
-    </servlet-mapping>
 
-    <display-name>Login</display-name>
+    <display-name>Controller</display-name>
     <servlet>
-        <servlet-name>loginServlet</servlet-name>
-        <servlet-class>command.login.LoginServlet</servlet-class>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>command.Controller</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>loginServlet</servlet-name>
-        <url-pattern>/loginServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>Register</display-name>
-    <servlet>
-        <servlet-name>registerServlet</servlet-name>
-        <servlet-class>command.login.RegisterServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>registerServlet</servlet-name>
-        <url-pattern>/registerServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>Meeting</display-name>
-    <servlet>
-        <servlet-name>createMeetingModeratorServlet</servlet-name>
-        <servlet-class>command.moderator.CreateMeetingModeratorServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>createMeetingModeratorServlet</servlet-name>
-        <url-pattern>/meetingServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>ModeratorTable</display-name>
-    <servlet>
-        <servlet-name>moderatorTableServlet</servlet-name>
-        <servlet-class>command.moderator.MeetingShowPageModeratorsServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>moderatorTableServlet</servlet-name>
-        <url-pattern>/moderatorTableServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>SpeakerTable</display-name>
-    <servlet>
-        <servlet-name>speakerTableServlet</servlet-name>
-        <servlet-class>command.speakers.AvailableReportsShowPageSpeakerServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>speakerTableServlet</servlet-name>
-        <url-pattern>/speakerTableServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>UserTable</display-name>
-    <servlet>
-        <servlet-name>userTableServlet</servlet-name>
-        <servlet-class>command.user.AvailableMeetingShowPageUserServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>userTableServlet</servlet-name>
-        <url-pattern>/userTableServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>CountParticipantsTable</display-name>
-    <servlet>
-        <servlet-name>moderatorCountParticipantsTable</servlet-name>
-        <servlet-class>command.moderator.ModeratorsCountParticipantsAndReportsPageServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>moderatorCountParticipantsTable</servlet-name>
-        <url-pattern>/countParticipantsTable</url-pattern>
-    </servlet-mapping>
-
-    <display-name>UserMeetingParticipation</display-name>
-    <servlet>
-        <servlet-name>userMeetingParticipation</servlet-name>
-        <servlet-class>command.user.MeetingParticipationUserServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>userMeetingParticipation</servlet-name>
-        <url-pattern>/userMeetingParticipation</url-pattern>
-    </servlet-mapping>
-
-    <display-name>ParticipationMeetingUserPage</display-name>
-    <servlet>
-        <servlet-name>participationMeetingUserPage</servlet-name>
-        <servlet-class>command.user.UserParticipationMeetingPageServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>participationMeetingUserPage</servlet-name>
-        <url-pattern>/participationMeetingUserPage</url-pattern>
-    </servlet-mapping>
-
-    <display-name>SpeakerReportTable</display-name>
-    <servlet>
-        <servlet-name>speakerReportTableServlet</servlet-name>
-        <servlet-class>command.speakers.ReportShowPageSpeakerServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>speakerReportTableServlet</servlet-name>
-        <url-pattern>/speakerReportTableServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>ModerReportTable</display-name>
-    <servlet>
-        <servlet-name>moderReportTableServlet</servlet-name>
-        <servlet-class>command.moderator.ReportShowPageModeratorsServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>moderReportTableServlet</servlet-name>
-        <url-pattern>/moderReportTableServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>ReportCreation</display-name>
-    <servlet>
-        <servlet-name>moderatorReportCreationServlet</servlet-name>
-        <servlet-class>command.moderator.CreateReportPageModeratorServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>moderatorReportCreationServlet</servlet-name>
-        <url-pattern>/reportCreationServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>TransferUrl</display-name>
-    <servlet>
-        <servlet-name>transferUrlServlet</servlet-name>
-        <servlet-class>command.TransferServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>transferUrlServlet</servlet-name>
-        <url-pattern>/transferUrlServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>ReassignSpeaker</display-name>
-    <servlet>
-        <servlet-name>reassignSpeakerServlet</servlet-name>
-        <servlet-class>command.speakers.ReassignReportSpeakerServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>reassignSpeakerServlet</servlet-name>
-        <url-pattern>/reassignSpeakerServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>LanguageSwitcher</display-name>
-    <servlet>
-        <servlet-name>languageSwitcherServlet</servlet-name>
-        <servlet-class>command.LocalServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>languageSwitcherServlet</servlet-name>
-        <url-pattern>/languageSwitcherServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>Delogining</display-name>
-    <servlet>
-        <servlet-name>logOutServlet</servlet-name>
-        <servlet-class>command.login.LogOutServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>logOutServlet</servlet-name>
-        <url-pattern>/deloginingServlet</url-pattern>
-    </servlet-mapping>
-
-    <display-name>MeetingSortingForModeratorsServlet</display-name>
-    <servlet>
-        <servlet-name>meetingSortingForModeratorsServlet</servlet-name>
-        <servlet-class>command.moderator.MeetingSortingForModeratorsServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>meetingSortingForModeratorsServlet</servlet-name>
-        <url-pattern>/meetingSortingForModeratorsServlet</url-pattern>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/controller</url-pattern>
     </servlet-mapping>
 
     <jsp-config>
@@ -191,80 +22,31 @@
     </jsp-config>
 
     <filter>
-        <filter-name>AdminFilter</filter-name>
-        <filter-class>command.filter.FilterAdminConnect</filter-class>
-        <init-param>
-            <param-name>active</param-name>
-            <param-value>true</param-value>
-        </init-param>
-    </filter>
-    <filter>
-        <filter-name>SpeakerFilter</filter-name>
-        <filter-class>command.filter.FilterSpeakerConnect</filter-class>
-        <init-param>
-            <param-name>active</param-name>
-            <param-value>true</param-value>
-        </init-param>
-    </filter>
-    <filter>
-        <filter-name>UserFilter</filter-name>
-        <filter-class>command.filter.FilterUserConnect</filter-class>
+        <filter-name>FilterConnect</filter-name>
+        <filter-class>command.filter.FilterConnect</filter-class>
         <init-param>
             <param-name>active</param-name>
             <param-value>true</param-value>
         </init-param>
     </filter>
 
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>command.filter.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>requestEncoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+
     <filter-mapping>
-        <filter-name>AdminFilter</filter-name>
-        <servlet-name>createMeetingModeratorServlet</servlet-name>
+        <filter-name>FilterConnect</filter-name>
+        <servlet-name>Controller</servlet-name>
     </filter-mapping>
+
     <filter-mapping>
-        <filter-name>AdminFilter</filter-name>
-        <servlet-name>moderatorTableServlet</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>SpeakerFilter</filter-name>
-        <servlet-name>speakerTableServlet</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>UserFilter</filter-name>
-        <servlet-name>userTableServlet</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>AdminFilter</filter-name>
-        <servlet-name>moderatorCountParticipantsTable</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>UserFilter</filter-name>
-        <servlet-name>userMeetingParticipation</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>UserFilter</filter-name>
-        <servlet-name>participationMeetingUserPage</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>SpeakerFilter</filter-name>
-        <servlet-name>speakerReportTableServlet</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>AdminFilter</filter-name>
-        <servlet-name>moderReportTableServlet</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>AdminFilter</filter-name>
-        <servlet-name>moderatorReportCreationServlet</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>AdminFilter</filter-name>
-        <servlet-name>transferUrlServlet</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>SpeakerFilter</filter-name>
-        <servlet-name>reassignSpeakerServlet</servlet-name>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>AdminFilter</filter-name>
-        <servlet-name>meetingSortingForModeratorsServlet</servlet-name>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
     </filter-mapping>
 </web-app>

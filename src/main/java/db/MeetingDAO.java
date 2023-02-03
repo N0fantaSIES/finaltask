@@ -1,10 +1,12 @@
 package db;
 
 import db.Entity.Meeting;
-import command.user.AvailableMeetingShowPageUserServlet;
+import command.user.AvailableMeetingShowPageUserCommand;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class MeetingDAO {
     private static final String SQL__CREATE_NEW_MEETING = "INSERT INTO meetings(name, topic, date, creator_id)"
@@ -36,8 +38,6 @@ public class MeetingDAO {
             prStmt = con.prepareStatement(SQL__CREATE_NEW_MEETING, Statement.RETURN_GENERATED_KEYS);
             prStmt.setString(1, meeting.getName());
             prStmt.setString(2, meeting.getTopic());
-//            prStmt.setInt(indexParam++, report.getNumber_of_reports());
-//            prStmt.setInt(indexParam++, report.getNumber_of_participants());
             prStmt.setDate(3, meeting.getDate());
             prStmt.setLong(4, meeting.getCreator_id());
             prStmt.executeUpdate();
@@ -152,8 +152,8 @@ public class MeetingDAO {
         ResultSet rs = null;
         Connection con = null;
         try {
-            int lowerBorder = (page_number - 1) * AvailableMeetingShowPageUserServlet.SPLIT_SIZE;
-            int upperBorder = (page_number * AvailableMeetingShowPageUserServlet.SPLIT_SIZE);
+            int lowerBorder = (page_number - 1) * AvailableMeetingShowPageUserCommand.SPLIT_SIZE;
+            int upperBorder = (page_number * AvailableMeetingShowPageUserCommand.SPLIT_SIZE);
             con = ConnectionToDatabase.getInstance().getConnection();
             MeetingMapper mapper = new MeetingMapper();
             prStmt = con.prepareStatement(SQL__SHOW_ALL_AVAILABLE_MEETINGS_FOR_USERS);

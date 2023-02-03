@@ -1,6 +1,7 @@
 package db.Entity;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Report extends Entity{

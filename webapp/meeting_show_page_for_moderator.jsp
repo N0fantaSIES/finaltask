@@ -18,10 +18,14 @@
             <td>${list.name}</td>
             <td>${list.topic}</td>
             <td>${list.creator_name}</td>
-            <td> <a href = <c:url value = "/transferUrlServlet?id=${list.id}"/>>
-                <input type="submit" value="<fmt:message key="meeting_show_page_for_moderator.jsp_table_button_create_new_report" bundle="${rb}"/>" /></a> <td>
-            <td> <a href = <c:url value = "/countParticipantsTable?id=${list.id}"/>>
-            <input type="submit" value="<fmt:message key="meeting_show_page_for_moderator.jsp_table_button_show_all_participants" bundle="${rb}"/>" /></a> <td>
+            <td><a href= <c:url value="/controller?command=transferUrlCommand&id=${list.id}"/>>
+                <input type="submit"
+                       value="<fmt:message key="meeting_show_page_for_moderator.jsp_table_button_create_new_report" bundle="${rb}"/>"/></a>
+            <td>
+            <td><a href= <c:url value="/controller?command=moderatorCountParticipantsTable&id=${list.id}"/>>
+                <input type="submit"
+                       value="<fmt:message key="meeting_show_page_for_moderator.jsp_table_button_show_all_participants" bundle="${rb}"/>"/></a>
+            <td>
         </tr>
     </c:forEach>
 </table>

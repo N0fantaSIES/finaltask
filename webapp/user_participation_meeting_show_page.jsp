@@ -11,7 +11,7 @@
     <tr>
         <th><fmt:message key="user_participation_meeting_show_page.jsp_table_header_name" bundle="${rb}"/></th>
         <th><fmt:message key="user_participation_meeting_show_page.jsp_table_header_topic" bundle="${rb}"/></th>
-        <th><fmt:message key="user_participation_meeting_show_page.jsp_table_header_date" bundle="${rb}"/></th>>
+        <th><fmt:message key="user_participation_meeting_show_page.jsp_table_header_date" bundle="${rb}"/></th>
         <th><fmt:message key="user_participation_meeting_show_page.jsp_table_header_creator_name" bundle="${rb}"/></th>
     </tr>
     <c:forEach var="list" items="${meetingArrayList}">

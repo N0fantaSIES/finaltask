@@ -7,10 +7,13 @@
     <title>Title</title>
 </head>
 <body>
-<form action="loginServlet">
-    <fmt:message key="login_page.jsp_login" bundle="${rb}"/> <input required name="login"/>
-
+<form id="login_form" action="controller?command=loginCommand" method="post">
+    <fieldset>
+        <fmt:message key="login_page.jsp_login" bundle="${rb}"/> <input required name="login"/>
+    </fieldset>
+    <fieldset>
     <fmt:message key="login_page.jsp_password" bundle="${rb}"/> <input required type="password" name="password"/>
+    </fieldset>
     <input type="submit" value="<fmt:message key="login_page.jsp_button_enter" bundle="${rb}"/>"/>
 </form>
 </body>
