@@ -23,13 +23,4 @@ public class UserParticipationMeetingPageCommand extends Command {
         request.setAttribute("meetingArrayList", meetingArrayList);
         return "/user_participation_meeting_show_page.jsp";
     }
-
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        MeetingDAO meetingDAO = new MeetingDAO();
-//        HttpSession session = req.getSession();
-//        MainUser mainUser = (MainUser) session.getAttribute("mainUser");
-//        ArrayList<Meeting> meetingArrayList = meetingDAO.showAllMeetingsWhereUserParticipates(mainUser.getId());
-//        req.setAttribute("meetingArrayList", meetingArrayList);
-//        req.getRequestDispatcher("/user_participation_meeting_show_page.jsp").forward(req, resp);
-//    }
 }

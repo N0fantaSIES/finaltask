@@ -17,12 +17,4 @@ public class LogOutCommand extends Command {
         session.removeAttribute("mainUser");
         return "/main.jsp";
     }
-
-
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        HttpSession session = req.getSession();
-//        session.removeAttribute("mainUser");
-//        req.getRequestDispatcher("/main.jsp").forward(req, resp);
-//    }
 }

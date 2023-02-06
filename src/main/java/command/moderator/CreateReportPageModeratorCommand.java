@@ -22,15 +22,4 @@ public class CreateReportPageModeratorCommand extends Command {
         reportsDAO.createNewReport(report);
         return "/controller?command=moderReportTableCommand";
     }
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        Report report = new Report();
-//        HttpSession session = req.getSession();
-//        report.setMeeting_id(Long.parseLong(req.getParameter("id")));
-//        report.setTitle_of_report(req.getParameter("title_of_report"));
-//        System.out.println(report);
-//        ReportsDAO reportsDAO = new ReportsDAO();
-//        reportsDAO.createNewReport(report);
-//        req.getRequestDispatcher("/moderatorTableServlet").forward(req, resp);
-//
-//    }
 }

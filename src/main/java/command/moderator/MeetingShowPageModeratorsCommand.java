@@ -19,12 +19,4 @@ public class MeetingShowPageModeratorsCommand extends Command {
         request.setAttribute("meetingList", meetingArrayList);
         return "/meeting_show_page_for_moderator.jsp";
     }
-
-
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        MeetingDAO meetingDAO = new MeetingDAO();
-//        ArrayList<Meeting> meetingArrayList = meetingDAO.showAllMeetings();
-//        req.setAttribute("meetingList", meetingArrayList);
-//        req.getRequestDispatcher("/meeting_show_page_for_moderator.jsp").forward(req, resp);
-//    }
 }

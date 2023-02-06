@@ -9,56 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="189e162d-d166-42c7-ac01-65233b4b4182" name="Changes" comment="First before command commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/filter/EncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/filter/FilterConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="189e162d-d166-42c7-ac01-65233b4b4182" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CommandContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CommandContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/LocalServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/LocalCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/LocalCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/LocalCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/MainCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/TransferServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/TransferCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/filter/FilterAdminConnect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/filter/FilterSpeakerConnect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/filter/FilterUserConnect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/login/LogOutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/login/LogOutCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/login/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/login/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/login/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/login/RegisterCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/CreateMeetingModeratorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/CreateMeetingModeratorCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/CreateReportPageModeratorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/CreateReportPageModeratorCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingShowPageModeratorsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingShowPageModeratorsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingSortingForModeratorsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingSortingForModeratorsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/ModeratorsCountParticipantsAndReportsPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/ModeratorsCountParticipantsAndReportsPageCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/ReportShowPageModeratorsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/ReportShowPageModeratorsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/speakers/AvailableReportsShowPageSpeakerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/speakers/AvailableReportsShowPageSpeakerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/speakers/ReassignReportSpeakerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/speakers/ReassignReportSpeakerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/speakers/ReportShowPageSpeakerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/speakers/ReportShowPageSpeakerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/user/AvailableMeetingShowPageUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/user/AvailableMeetingShowPageUserCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/user/MeetingParticipationUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/user/MeetingParticipationUserCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/user/UserParticipationMeetingPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/user/UserParticipationMeetingPageCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/Entity/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/Entity/Meeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/Entity/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/Entity/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/MeetingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/MeetingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/lang.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/lang_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/lang_uk.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang_uk.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/command/moderator/CreateMeetingModeratorServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/command/moderator/CreateMeetingModeratorCommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/available_meeting_show_page_for_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/available_meeting_show_page_for_user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/available_report_show_page_for_speaker.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/available_report_show_page_for_speaker.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/login_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/login_page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/main_page.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/TransferCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/TransferCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/filter/FilterConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/filter/FilterConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/login/LogOutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/login/LogOutCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/login/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/login/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/login/RegisterCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/login/RegisterCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/CreateMeetingModeratorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/CreateMeetingModeratorCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/CreateReportPageModeratorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/CreateReportPageModeratorCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingShowPageModeratorsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingShowPageModeratorsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingSortingForModeratorsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingSortingForModeratorsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/ModeratorsCountParticipantsAndReportsPageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/ModeratorsCountParticipantsAndReportsPageCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/ReportShowPageModeratorsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/ReportShowPageModeratorsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/speakers/AvailableReportsShowPageSpeakerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/speakers/AvailableReportsShowPageSpeakerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/speakers/ReassignReportSpeakerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/speakers/ReassignReportSpeakerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/speakers/ReportShowPageSpeakerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/speakers/ReportShowPageSpeakerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/user/AvailableMeetingShowPageUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/user/AvailableMeetingShowPageUserCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/user/MeetingParticipationUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/user/MeetingParticipationUserCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/user/UserParticipationMeetingPageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/user/UserParticipationMeetingPageCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/command/moderator/CreateMeetingModeratorCommandTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/db/Entity/ReportTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/meeting_creation_page_for_moderators.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/meeting_creation_page_for_moderators.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/meeting_show_page_for_moderator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/meeting_show_page_for_moderator.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/register_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/register_page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/report_create_page_for_moderators.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/report_create_page_for_moderators.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/show_number_of_participants_per_meeting_moderators.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/show_number_of_participants_per_meeting_moderators.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/user_participation_meeting_show_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/user_participation_meeting_show_page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/working_page_for_moderators.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/working_page_for_moderators.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/working_page_for_speakers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/working_page_for_speakers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/working_page_for_users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/working_page_for_users.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +45,8 @@
         <option value="Interface" />
         <option value="Jsp File" />
         <option value="JUnit5 Test Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -136,6 +110,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="command.moderator" />
       <recent name="servlets.moderator" />
       <recent name="db" />
       <recent name="servlets.login" />
@@ -167,17 +142,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDAOTest.createNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateReportPageModeratorCommandTest.execute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finaltask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="db.*" />
+          <option name="PATTERN" value="command.moderator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="db" />
-      <option name="MAIN_CLASS_NAME" value="db.UserDAOTest" />
-      <option name="METHOD_NAME" value="createNewUser" />
+      <option name="PACKAGE_NAME" value="command.moderator" />
+      <option name="MAIN_CLASS_NAME" value="command.moderator.CreateReportPageModeratorCommandTest" />
+      <option name="METHOD_NAME" value="execute" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -304,20 +279,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.CreateReportPageModeratorCommandTest.execute" />
       <item itemvalue="JUnit.CreateMeetingModeratorCommandTest.doGet" />
       <item itemvalue="JUnit.UserDAOTest.findUserByLoginAndPassword" />
       <item itemvalue="JUnit.UserDAOTest.findUserByUserId" />
-      <item itemvalue="JUnit.UserDAOTest.createNewUser" />
       <item itemvalue="JUnit.All in finaltask" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.70" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateReportPageModeratorCommandTest.execute" />
         <item itemvalue="JUnit.CreateMeetingModeratorCommandTest.doGet" />
         <item itemvalue="JUnit.All in finaltask" />
         <item itemvalue="JUnit.UserDAOTest.findUserByUserId" />
         <item itemvalue="JUnit.UserDAOTest.findUserByLoginAndPassword" />
-        <item itemvalue="JUnit.UserDAOTest.createNewUser" />
       </list>
     </recent_temporary>
   </component>
@@ -363,7 +338,9 @@
       <workItem from="1675177845610" duration="5573000" />
       <workItem from="1675263279302" duration="20858000" />
       <workItem from="1675339272147" duration="24909000" />
-      <workItem from="1675431392454" duration="5548000" />
+      <workItem from="1675431392454" duration="12961000" />
+      <workItem from="1675640409093" duration="371000" />
+      <workItem from="1675688950703" duration="1216000" />
     </task>
     <task id="LOCAL-00001" summary="First before command commit">
       <created>1675279456337</created>
@@ -372,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675279456337</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second before who came commit">
+      <created>1675438499512</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675438499512</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,16 +364,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First before command commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First before command commit" />
+    <MESSAGE value="Second before who came commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second before who came commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/command/LocalCommand.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/db/MeetingDAO.java</url>
           <line>62</line>
@@ -449,11 +429,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/db/ReportsDAO.java</url>
           <line>172</line>
           <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/command/login/LoginCommand.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

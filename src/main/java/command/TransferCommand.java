@@ -13,10 +13,4 @@ public class TransferCommand extends Command {
         request.setAttribute("id", id);
         return "/report_create_page_for_moderators.jsp";
     }
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//       long id = Long.parseLong(req.getParameter("id"));
-//        req.setAttribute("id", id);
-//        req.getRequestDispatcher("/report_create_page_for_moderators.jsp").forward(req, resp);
-//    }
 }

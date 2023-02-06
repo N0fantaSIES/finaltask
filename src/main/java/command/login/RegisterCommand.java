@@ -33,21 +33,4 @@ public class RegisterCommand extends Command {
         session.setAttribute("mainUser", mainUser);
         return "/main.jsp";
     }
-
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        MainUser mainUser = new MainUser();
-//        mainUser.setLogin(req.getParameter("login"));
-//        mainUser.setPassword(req.getParameter("password"));
-//        mainUser.setDate(Date.valueOf(LocalDate.now()));
-//        mainUser.setName(req.getParameter("name"));
-//        mainUser.setSurname(req.getParameter("surname"));
-//        mainUser.setRole_id(USER_ROLE_GUEST);
-//        System.out.println(mainUser);
-//        UserDAO userDAO = new UserDAO();
-//        userDAO.createNewUser(mainUser);
-//        HttpSession session = req.getSession();
-//        session.setAttribute("mainUser", mainUser);
-//        req.getRequestDispatcher("/main_page.jsp").forward(req, resp);
-//
-//    }
 }

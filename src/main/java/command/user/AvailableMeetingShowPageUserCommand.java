@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class AvailableMeetingShowPageUserCommand extends Command {
 
-    public static final int SPLIT_SIZE = 5;
+    public static final int SPLIT_SIZE = 10;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -34,21 +34,4 @@ public class AvailableMeetingShowPageUserCommand extends Command {
         request.setAttribute("split", numberOfSplits);
         return "/available_meeting_show_page_for_user.jsp";
     }
-
-    //    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        HttpSession session = req.getSession();
-//        MainUser mainUser = (MainUser) session.getAttribute("mainUser");
-//        MeetingDAO meetingDAO = new MeetingDAO();
-//        int pageNumber = 1;
-//        if (req.getParameter("pagNumber") != null){
-//            pageNumber = Integer.parseInt(req.getParameter("pagNumber"));
-//        }
-//        long user_id = mainUser.getId();
-//        double numberOfAvailableMeetings = meetingDAO.numberOfAvailableMeetings(user_id);
-//        ArrayList<Meeting> meetingArrayList = meetingDAO.showAllAvailableMeetingsForUsers(user_id, pageNumber);
-//        int numberOfSplits = (int) Math.ceil(numberOfAvailableMeetings / SPLIT_SIZE);
-//        req.setAttribute("meetingList", meetingArrayList);
-//        req.setAttribute("split", numberOfSplits);
-//        req.getRequestDispatcher("/available_meeting_show_page_for_user.jsp").forward(req, resp);
-//    }
 }

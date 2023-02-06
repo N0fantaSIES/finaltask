@@ -14,12 +14,5 @@ public class MainCommand extends Command {
         session.setAttribute("mainUser", null);
         return "/main.jsp";
     }
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        HttpSession session = req.getSession();
-//        session.setAttribute("mainUser", null);
-//        req.getRequestDispatcher("/main.jsp").forward(req, resp);
-//
-//    }
 }
 

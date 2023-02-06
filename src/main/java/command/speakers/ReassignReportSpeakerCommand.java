@@ -21,12 +21,4 @@ public class ReassignReportSpeakerCommand extends Command {
         reportsDAO.updateUserIdByReportId(reportId, mainUser.getId());
         return "/speakerReportTableServlet";
     }
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        ReportsDAO reportsDAO = new ReportsDAO();
-//        HttpSession session = req.getSession();
-//        MainUser mainUser = (MainUser) session.getAttribute("mainUser");
-//        long reportId = Long.parseLong(req.getParameter("id"));
-//        reportsDAO.updateUserIdByReportId(reportId, mainUser.getId());
-//        req.getRequestDispatcher("/speakerReportTableServlet").forward(req, resp);
-//    }
 }

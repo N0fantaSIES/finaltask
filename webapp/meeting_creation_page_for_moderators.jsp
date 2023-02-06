@@ -14,9 +14,6 @@
     <fmt:message key="meeting_creation_page_for_moderators.jsp_moder_topic" bundle="${rb}"/> <input required
                                                                                                     name="topic"/>
 
-    <fmt:message key="meeting_creation_page_for_moderators.jsp_moder_how_many_participants_will_physically_attend"
-                 bundle="${rb}"/> <input required type="number" name="participantsNumber"/>
-
     <fmt:message key="meeting_creation_page_for_moderators.jsp_moder_date" bundle="${rb}"/> <input required
                                                                                                    type="date"
                                                                                                    name="date"/>

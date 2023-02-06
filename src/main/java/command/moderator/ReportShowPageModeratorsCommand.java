@@ -19,11 +19,4 @@ public class ReportShowPageModeratorsCommand extends Command {
         request.setAttribute("reportList", reportArrayList);
         return "/report_show_page_for_moderators.jsp";
     }
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        ReportsDAO reportsDAO = new ReportsDAO();
-//        ArrayList<Report> reportArrayList = reportsDAO.showAllReports();
-//        req.setAttribute("reportList", reportArrayList);
-//        req.getRequestDispatcher("/report_show_page_for_moderators.jsp").forward(req, resp);
-//    }
 }

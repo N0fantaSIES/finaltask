@@ -19,11 +19,4 @@ public class AvailableReportsShowPageSpeakerCommand extends Command {
         request.setAttribute("reportList", reportArrayList);
         return "/available_report_show_page_for_speaker.jsp";
     }
-
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        ReportsDAO reportsDAO = new ReportsDAO();
-//        ArrayList<Report> reportArrayList = reportsDAO.showAllAvailableReportsForSpeakers();
-//        req.setAttribute("reportList", reportArrayList);
-//        req.getRequestDispatcher("/available_report_show_page_for_speaker.jsp").forward(req, resp);
-//    }
 }

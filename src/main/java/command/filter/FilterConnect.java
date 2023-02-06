@@ -74,7 +74,6 @@ public class FilterConnect implements Filter {
         MainUser mainUser = (MainUser) session.getAttribute("mainUser");
         if (active) {
             if (mainUser != null) {
-//                servletRequest.getRequestDispatcher("/main.jsp").forward(servletRequest, servletResponse);
                 int userRoleId = mainUser.getRole_id();
                 ArrayList<String> command = idMap.get(userRoleId);
                 if (!command.contains(httpReq.getParameter("command"))) {

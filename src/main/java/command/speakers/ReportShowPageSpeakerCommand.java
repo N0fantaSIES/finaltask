@@ -23,13 +23,4 @@ public class ReportShowPageSpeakerCommand extends Command {
         request.setAttribute("reportArrayList", reportArrayList);
         return "/speaker_reports_show_page.jsp";
     }
-
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        ReportsDAO reportsDAO = new ReportsDAO();
-//        HttpSession session = req.getSession();
-//        MainUser mainUser = (MainUser) session.getAttribute("mainUser");
-//        ArrayList<Report> reportArrayList = reportsDAO.findReportsByUserId(mainUser.getId());
-//        req.setAttribute("reportArrayList", reportArrayList);
-//        req.getRequestDispatcher("/speaker_reports_show_page.jsp").forward(req, resp);
-//    }
 }

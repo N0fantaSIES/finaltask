@@ -21,13 +21,4 @@ public class MeetingParticipationUserCommand extends Command {
         meetingUserDAO.createNewMeetingUser(meeting_id, mainUser.getId());
         return "/participationMeetingUserPage";
     }
-
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        HttpSession session = req.getSession();
-//        MainUser mainUser = (MainUser) session.getAttribute("mainUser");
-//        long meeting_id = Long.parseLong(req.getParameter("id"));
-//        MeetingUserDAO meetingUserDAO = new MeetingUserDAO();
-//        meetingUserDAO.createNewMeetingUser(meeting_id, mainUser.getId());
-//        req.getRequestDispatcher("/participationMeetingUserPage").forward(req, resp);
-//    }
 }
