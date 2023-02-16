@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 
 public class CreateMeetingModeratorCommand extends Command {
@@ -22,6 +23,7 @@ public class CreateMeetingModeratorCommand extends Command {
         meeting.setName(request.getParameter("name"));
         meeting.setTopic(request.getParameter("topic"));
         meeting.setDate(Date.valueOf(request.getParameter("date")));
+        meeting.setNumber_of_participants_who_came(Integer.parseInt(request.getParameter("participants")));
         meeting.setCreator_id(mainUser.getId());
         meeting.setCreator_name(mainUser.getLogin());
         System.out.println(meeting);

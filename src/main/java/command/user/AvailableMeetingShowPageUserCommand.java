@@ -6,7 +6,6 @@ import db.Entity.Meeting;
 import db.MeetingDAO;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -15,8 +14,7 @@ import java.util.ArrayList;
 
 public class AvailableMeetingShowPageUserCommand extends Command {
 
-    public static final int SPLIT_SIZE = 10;
-
+    public static final int AVAILABLE_MEETING_USER_SPLIT_SIZE = 10;
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         HttpSession session = request.getSession();
@@ -29,7 +27,7 @@ public class AvailableMeetingShowPageUserCommand extends Command {
         long user_id = mainUser.getId();
         double numberOfAvailableMeetings = meetingDAO.numberOfAvailableMeetings(user_id);
         ArrayList<Meeting> meetingArrayList = meetingDAO.showAllAvailableMeetingsForUsers(user_id, pageNumber);
-        int numberOfSplits = (int) Math.ceil(numberOfAvailableMeetings / SPLIT_SIZE);
+        int numberOfSplits = (int) Math.ceil(numberOfAvailableMeetings / AVAILABLE_MEETING_USER_SPLIT_SIZE);
         request.setAttribute("meetingList", meetingArrayList);
         request.setAttribute("split", numberOfSplits);
         return "/available_meeting_show_page_for_user.jsp";

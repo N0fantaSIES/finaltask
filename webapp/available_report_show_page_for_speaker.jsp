@@ -9,7 +9,7 @@
 
 <table>
     <tr>
-        <th> <fmt:message key="available_report_show_page_for_speaker.jsp_table_header_name" bundle="${rb}"/></th>
+        <th><fmt:message key="available_report_show_page_for_speaker.jsp_table_header_name" bundle="${rb}"/></th>
         <th><fmt:message key="available_report_show_page_for_speaker.jsp_table_header_topic" bundle="${rb}"/></th>
         <th><fmt:message key="available_report_show_page_for_speaker.jsp_table_header_creator_name" bundle="${rb}"/></th>
         <th><fmt:message key="available_report_show_page_for_speaker.jsp_table_header_date" bundle="${rb}"/></th>
@@ -27,6 +27,15 @@
         </tr>
     </c:forEach>
 </table>
+
+<c:set var="k" value="0" />
+
+<%
+    int splitNumber = (int) request.getAttribute("split");
+    for (int i = 0; i < splitNumber; i++) { %>
+<c:set var="k" value="${k+1}" />
+<a href="<c:url value = "/controller?command=speakerTableCommand&pagNumber=${k}"/>"><%=i+1%></a>
+<%}%>
 
 </body>
 </html>

@@ -12,11 +12,20 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class MeetingShowPageModeratorsCommand extends Command {
+
+    public static final int MEETING_SHOW_PAGE_MODERATORS_SPLIT_SIZE = 10;
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         MeetingDAO meetingDAO = new MeetingDAO();
-        ArrayList<Meeting> meetingArrayList = meetingDAO.showAllMeetings();
+        int pageNumber = 1;
+        if (request.getParameter("pagNumber") != null){
+            pageNumber = Integer.parseInt(request.getParameter("pagNumber"));
+        }
+        double numberOfAllMeetings = meetingDAO.numberOfAllMeetings();
+        ArrayList<Meeting> meetingArrayList = meetingDAO.showAllMeetings(pageNumber);
+        int numberOfSplits = (int) Math.ceil(numberOfAllMeetings / MEETING_SHOW_PAGE_MODERATORS_SPLIT_SIZE);
         request.setAttribute("meetingList", meetingArrayList);
+        request.setAttribute("split", numberOfSplits);
         return "/meeting_show_page_for_moderator.jsp";
     }
 }

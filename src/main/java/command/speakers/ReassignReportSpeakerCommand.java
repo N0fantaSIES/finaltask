@@ -19,6 +19,6 @@ public class ReassignReportSpeakerCommand extends Command {
         MainUser mainUser = (MainUser) session.getAttribute("mainUser");
         long reportId = Long.parseLong(request.getParameter("id"));
         reportsDAO.updateUserIdByReportId(reportId, mainUser.getId());
-        return "/speakerReportTableServlet";
+        return "/controller?command=speakerReportTableCommand";
     }
 }

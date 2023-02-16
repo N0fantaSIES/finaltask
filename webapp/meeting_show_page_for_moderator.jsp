@@ -30,5 +30,14 @@
     </c:forEach>
 </table>
 
+<c:set var="k" value="0" />
+
+<%
+    int splitNumber = (int) request.getAttribute("split");
+    for (int i = 0; i < splitNumber; i++) { %>
+<c:set var="k" value="${k+1}" />
+<a href="<c:url value = "/controller?command=moderatorTableCommand&pagNumber=${k}"/>"><%=i+1%></a>
+<%}%>
+
 </body>
 </html>

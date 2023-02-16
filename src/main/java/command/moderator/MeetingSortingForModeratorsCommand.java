@@ -15,49 +15,39 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+import static command.moderator.MeetingShowPageModeratorsCommand.MEETING_SHOW_PAGE_MODERATORS_SPLIT_SIZE;
+
 public class MeetingSortingForModeratorsCommand extends Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String sortingIndex = request.getParameter("sortingIndex");
         MeetingDAO meetingDAO = new MeetingDAO();
         ReportsDAO reportsDAO = new ReportsDAO();
-        ArrayList<Meeting> meetingArrayList = meetingDAO.showAllMeetings();
-        MeetingUserDAO meetingUserDAO = new MeetingUserDAO();
-        for (Meeting m : meetingArrayList) {
-            int number_of_participants = meetingUserDAO.countNumberOfUsersPerMeeting(m.getId());
-            int number_of_reports = reportsDAO.countNumberOfReportsPerMeeting(m.getId());
-            m.setNumber_of_participants(number_of_participants);
-            m.setNumber_of_reports(number_of_reports);
+        int pageNumber = 1;
+        if (request.getParameter("pagNumber") != null && !request.getParameter("pagNumber").isEmpty()) {
+            pageNumber = Integer.parseInt(request.getParameter("pagNumber"));
         }
-        if (!meetingArrayList.isEmpty()) {
-            switch (sortingIndex) {
-                case "date":
-                    Collections.sort(meetingArrayList, new Comparator<Meeting>() {
-                        @Override
-                        public int compare(Meeting o1, Meeting o2) {
-                            return o1.getDate().compareTo(o2.getDate());
-                        }
-                    });
-                    break;
-                case "numberOfParticipants":
-                    Collections.sort(meetingArrayList, new Comparator<Meeting>() {
-                        @Override
-                        public int compare(Meeting o1, Meeting o2) {
-                            return o1.getNumber_of_participants() - o2.getNumber_of_participants();
-                        }
-                    });
-                    break;
-                case "numberOfReports":
-                    Collections.sort(meetingArrayList, new Comparator<Meeting>() {
-                        @Override
-                        public int compare(Meeting o1, Meeting o2) {
-                            return o1.getNumber_of_reports() - o2.getNumber_of_reports();
-                        }
-                    });
-                    break;
-            }
+        double numberOfAllMeetings = meetingDAO.numberOfAllMeetings();
+        ArrayList<Meeting> meetingArrayList = new ArrayList<>();
+        int numberOfSplits = (int) Math.ceil(numberOfAllMeetings / MEETING_SHOW_PAGE_MODERATORS_SPLIT_SIZE);
+        MeetingUserDAO meetingUserDAO = new MeetingUserDAO();
+        switch (sortingIndex) {
+            case "date":
+                meetingArrayList = meetingDAO.showAllMeetings(pageNumber, "date");
+                break;
+            case "numberOfParticipants":
+                meetingArrayList = meetingDAO.showAllMeetings(pageNumber, "number_of_participants");
+                break;
+            case "numberOfReports":
+                meetingArrayList = meetingDAO.showAllMeetings(pageNumber, "number_of_reports");
+                break;
+            default:
+                meetingArrayList = meetingDAO.showAllMeetings(pageNumber);
+                break;
         }
         request.setAttribute("meetingList", meetingArrayList);
+        request.setAttribute("split", numberOfSplits);
+        request.setAttribute("page", pageNumber);
         return "/show_number_of_participants_per_meeting_moderators.jsp";
     }
 }

@@ -97,10 +97,12 @@ public class Meeting extends Entity{
 
     @Override
     public String toString() {
-        return "Report{" +
+        return "Meeting{" +
                 "name='" + name + '\'' +
                 ", topic='" + topic + '\'' +
                 ", date=" + date +
+                ", number_of_reports=" + number_of_reports +
+                ", number_of_participants_who_came=" + number_of_participants_who_came +
                 '}';
     }
 }

@@ -19,6 +19,6 @@ public class MeetingParticipationUserCommand extends Command {
         long meeting_id = Long.parseLong(request.getParameter("id"));
         MeetingUserDAO meetingUserDAO = new MeetingUserDAO();
         meetingUserDAO.createNewMeetingUser(meeting_id, mainUser.getId());
-        return "/participationMeetingUserPage";
+        return "/controller?command=participationMeetingUserPage";
     }
 }
