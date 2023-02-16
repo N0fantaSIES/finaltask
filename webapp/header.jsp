@@ -76,9 +76,11 @@
     </div>
 
     <div id="rightHeader">
+     <c:if test="${mainUser != null }">
         <form id="logout_form" action="controller?command=logOutCommand" method="post">
             <input type="submit" value="<fmt:message key="header.jsp_button_moder_leave" bundle="${rb}"/>" />
         </form>
+    </c:if>
     </div>
 
 </div>

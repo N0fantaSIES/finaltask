@@ -10,37 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="189e162d-d166-42c7-ac01-65233b4b4182" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/command/login/RegisterCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/command/moderator/CreateMeetingModeratorCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/command/moderator/MeetingShowPageModeratorsCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/command/speakers/ReassignReportSpeakerCommandTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/CreateMeetingModeratorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/CreateMeetingModeratorCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/CreateReportPageModeratorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/CreateReportPageModeratorCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingShowPageModeratorsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingShowPageModeratorsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingSortingForModeratorsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/MeetingSortingForModeratorsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/ModeratorsCountParticipantsAndReportsPageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/ModeratorsCountParticipantsAndReportsPageCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/moderator/ReportShowPageModeratorsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/moderator/ReportShowPageModeratorsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/speakers/AvailableReportsShowPageSpeakerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/speakers/AvailableReportsShowPageSpeakerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/speakers/ReassignReportSpeakerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/speakers/ReassignReportSpeakerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/speakers/ReportShowPageSpeakerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/speakers/ReportShowPageSpeakerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/user/AvailableMeetingShowPageUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/user/AvailableMeetingShowPageUserCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/user/MeetingParticipationUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/user/MeetingParticipationUserCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/user/UserParticipationMeetingPageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/user/UserParticipationMeetingPageCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/Entity/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/Entity/Meeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/MeetingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/MeetingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/ReportsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/ReportsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/MeetingDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/MeetingUserDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/ReportsDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/UserDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/available_report_show_page_for_speaker.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/available_report_show_page_for_speaker.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/meeting_creation_page_for_moderators.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/meeting_creation_page_for_moderators.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/meeting_show_page_for_moderator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/meeting_show_page_for_moderator.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/register_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/register_page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/report_show_page_for_moderators.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/report_show_page_for_moderators.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/show_number_of_participants_per_meeting_moderators.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/show_number_of_participants_per_meeting_moderators.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/speaker_reports_show_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/speaker_reports_show_page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/user_participation_meeting_show_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/user_participation_meeting_show_page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/command/moderator/CreateMeetingModeratorCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/command/moderator/CreateMeetingModeratorCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,11 +93,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="command.speakers" />
       <recent name="command.moderator" />
       <recent name="command.login" />
       <recent name="servlets.moderator" />
       <recent name="db" />
-      <recent name="servlets.login" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.70">
@@ -135,48 +109,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateMeetingModeratorCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finaltask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="command.login.*" />
+          <option name="PATTERN" value="command.moderator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="command.login" />
-      <option name="MAIN_CLASS_NAME" value="command.login.RegisterCommandTest" />
+      <option name="PACKAGE_NAME" value="command.moderator" />
+      <option name="MAIN_CLASS_NAME" value="command.moderator.CreateMeetingModeratorCommandTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterCommandTest.execute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeetingShowPageModeratorsCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finaltask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="command.login.*" />
+          <option name="PATTERN" value="command.moderator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="command.login" />
-      <option name="MAIN_CLASS_NAME" value="command.login.RegisterCommandTest" />
-      <option name="METHOD_NAME" value="execute" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="command.moderator" />
+      <option name="MAIN_CLASS_NAME" value="command.moderator.MeetingShowPageModeratorsCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReportsDAOTest.findReportsByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeetingShowPageModeratorsCommandTest.execute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finaltask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="db.*" />
+          <option name="PATTERN" value="command.moderator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="db" />
-      <option name="MAIN_CLASS_NAME" value="db.ReportsDAOTest" />
-      <option name="METHOD_NAME" value="findReportsByUserId" />
+      <option name="PACKAGE_NAME" value="command.moderator" />
+      <option name="MAIN_CLASS_NAME" value="command.moderator.MeetingShowPageModeratorsCommandTest" />
+      <option name="METHOD_NAME" value="execute" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -286,20 +259,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RegisterCommandTest" />
-      <item itemvalue="JUnit.RegisterCommandTest.execute" />
-      <item itemvalue="JUnit.ReportsDAOTest.findReportsByUserId" />
+      <item itemvalue="JUnit.CreateMeetingModeratorCommandTest" />
+      <item itemvalue="JUnit.MeetingShowPageModeratorsCommandTest" />
+      <item itemvalue="JUnit.MeetingShowPageModeratorsCommandTest.execute" />
       <item itemvalue="JUnit.UserDAOTest" />
       <item itemvalue="JUnit.All in finaltask" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.70" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDAOTest" />
-        <item itemvalue="JUnit.ReportsDAOTest.findReportsByUserId" />
-        <item itemvalue="JUnit.RegisterCommandTest" />
         <item itemvalue="JUnit.All in finaltask" />
-        <item itemvalue="JUnit.RegisterCommandTest.execute" />
+        <item itemvalue="JUnit.MeetingShowPageModeratorsCommandTest.execute" />
+        <item itemvalue="JUnit.MeetingShowPageModeratorsCommandTest" />
+        <item itemvalue="JUnit.CreateMeetingModeratorCommandTest" />
+        <item itemvalue="JUnit.UserDAOTest" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +327,7 @@
       <workItem from="1676048084257" duration="5838000" />
       <workItem from="1676388725259" duration="2342000" />
       <workItem from="1676470123988" duration="11290000" />
-      <workItem from="1676540102241" duration="1714000" />
+      <workItem from="1676540102241" duration="13807000" />
     </task>
     <task id="LOCAL-00001" summary="First before command commit">
       <created>1675279456337</created>
@@ -377,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675692982834</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fourth before mocking commit">
+      <created>1676556460015</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676556460015</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +367,8 @@
     <MESSAGE value="First before command commit" />
     <MESSAGE value="Second before who came commit" />
     <MESSAGE value="Third before total pagination commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Third before total pagination commit" />
+    <MESSAGE value="Fourth before mocking commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fourth before mocking commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -408,14 +389,14 @@
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/command/moderator/MeetingSortingForModeratorsCommand.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="89" />
+          <url>file://$PROJECT_DIR$/src/main/java/command/Controller.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/command/moderator/MeetingSortingForModeratorsCommand.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="93" />
+          <url>file://$PROJECT_DIR$/src/main/java/command/Controller.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -424,6 +405,6 @@
     <SUITE FILE_PATH="coverage/finaltask$MeetingDAOTest_createNewMeeting.ic" NAME="MeetingDAOTest.createNewMeeting Coverage Results" MODIFIED="1674766872544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>db.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/finaltask$All_in_finaltask.ic" NAME="All in finaltask Coverage Results" MODIFIED="1676474527932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/finaltask$All_in_finaltask.ic" NAME="All in finaltask Coverage Results" MODIFIED="1676562814989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
